@@ -10,3 +10,83 @@ body {
 }
 
 /* Add styles here! */
+:root {
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 48px;
+  --space-6: 64px;
+  --space-7: 96px;
+  --space-8: 128px;
+  --fs-1: 1rem;
+  --fs-2: 1.25rem;
+  --fs-3: 1.5rem;
+  --fs-4: 2rem;
+  --color-primary: hsl(160deg, 100%, 30%);
+  --color-secondary-light: hsl(45deg, 100%, 50%);
+  --color-secondary-dark: hsl(45deg, 100%, 40%);
+  --color-black: hsl(0deg,0%,0%);
+  --color-gray-darker: hsl(0deg,0%,10%);
+  --color-gray-dark: hsl(0deg,0%,30%);
+  --color-gray: hsl(0deg,0%,40%);
+  --color-gray-light: hsl(0deg,0%,60%);
+  --color-white: hsl(0deg,0%,100%);
+}
+/* global */
+p {
+  padding-left: var(--space-2);
+}
+/* container */
+.max-width-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: var(--color-white);
+  padding-top: var(--space-1);
+}
+/* header */
+header {
+  background-color: var(--color-white);
+}
+
+.intro-chunk {
+  padding: var(--space-4) 0;
+}
+.intro-chunk p {
+  max-width: 350px;
+}
+
+.title {
+  font-size: var(--fs-4);
+  font-weight: 900;
+  margin-bottom: var(--space-4);
+  padding-left: var(--space-2);
+}
+
+strong {
+  color: var(--color-primary);
+}
+/* main */
+main {
+  background-color: var(--color-gray-light);
+  border-top: 5px solid var(--color-gray);
+  padding: var(--space-5) 0;
+}
+main p {
+  padding-left: var(--space-2);
+}
+
+.indented-heading {
+  background-color: var(--color-secondary-light);
+  padding: var(--space-3);
+  border-bottom: 5px solid var(--color-secondary-dark);
+  margin-top: 0px;
+  margin-left: -8px;
+  max-width: fit-content;
+}
+
+.card {
+  border-bottom: 5px solid var(--color-gray);
+  padding-right: var(--space-2);
+}
+
